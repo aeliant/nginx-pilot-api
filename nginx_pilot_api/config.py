@@ -8,7 +8,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config:
     """ Base Configuration for all 3 environments. """
 
-    SECRET_KEY = os.getenv('SECRET_KEY', 'secret-to-change')
+    SECRET_KEY = os.getenv('FLASK_SECRET_KEY', 'secret-to-change')
     DEBUG = False
 
 
