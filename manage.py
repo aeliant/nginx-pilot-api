@@ -4,8 +4,10 @@ import unittest
 
 from flask_script import Manager
 from nginx_pilot_api import create_app
+from nginx_pilot_api.controller import blueprint
 
 app = create_app(os.getenv('FLASK_ENV') or 'dev')
+app.register_blueprint(blueprint)
 app.app_context().push()
 
 manager = Manager(app)
