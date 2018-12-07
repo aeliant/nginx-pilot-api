@@ -5,7 +5,7 @@ import unittest
 from flask_script import Manager
 from nginx_pilot_api import create_app
 
-app = create_app(os.getenv('FLASK_ENV', 'dev'))
+app = create_app(os.getenv('FLASK_ENV') or 'dev')
 app.app_context().push()
 
 manager = Manager(app)
@@ -24,7 +24,7 @@ def test():
         pattern='test*.py'
     )
     result = unittest.TextTestRunner(verbosity=2).run(tests)
-    if result.wasSuccesful():
+    if result.wasSuccessful():
         return 0
     return 1
 
