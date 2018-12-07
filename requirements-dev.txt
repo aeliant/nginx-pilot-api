@@ -1,0 +1,2 @@
+factory-boy==2.11.1
+flask-testing==0.7.1
