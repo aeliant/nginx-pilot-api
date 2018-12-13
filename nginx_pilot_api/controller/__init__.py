@@ -1,4 +1,4 @@
-# coding=utf-8
+"""Controller package entry point, defining the global blueprint."""
 from flask_restplus import Api
 from flask import Blueprint
 

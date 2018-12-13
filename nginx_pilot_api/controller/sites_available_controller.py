@@ -1,4 +1,4 @@
-# coding=utf-8
+"""Sites available controller."""
 from flask import request
 from flask_restplus import Resource
 
