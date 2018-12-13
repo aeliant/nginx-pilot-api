@@ -1,4 +1,4 @@
-# coding=utf-8
+"""Main configuration file."""
 import os
 
 
@@ -6,27 +6,27 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    """ Base Configuration for all 3 environments. """
+    """Base Configuration for all 3 environments."""
 
     SECRET_KEY = os.getenv('FLASK_SECRET_KEY', 'secret-to-change')
     DEBUG = False
 
 
 class DevelopmentConfig(Config):
-    """ Development configuration. """
+    """Development configuration."""
 
     DEBUG = True
 
 
 class TestingConfig(Config):
-    """ Testing configuration. """
+    """Testing configuration."""
 
     DEBUG = True
     TESTING = True
 
 
 class ProductionConfig(Config):
-    """ Production configurationt. """
+    """Production configuration."""
 
     DEBUG = False
 
