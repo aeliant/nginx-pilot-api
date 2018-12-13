@@ -1,4 +1,4 @@
-# coding=utf-8
+"""Main project file, managing tests and server running."""
 import os
 import unittest
 
@@ -15,12 +15,13 @@ manager = Manager(app)
 
 @manager.command
 def run():
+    """Run the server."""
     app.run()
 
 
 @manager.command
 def test():
-    """ Runs the unittest """
+    """Runs the tests."""
     tests = unittest.TestLoader().discover(
         'nginx_pilot_api/tests',
         pattern='test*.py'

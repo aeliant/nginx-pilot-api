@@ -1,4 +1,4 @@
-# coding=utf-8
+"""Data Transfer Object file, regrouping all DTO objects used in controller."""
 from flask_restplus import Namespace, fields, model
 
 hash = model('upstream-hash', {
@@ -34,6 +34,10 @@ upstream = model('upstream', {
 
 
 class SiteAvailableDto:
+    """Site available data transfer object, used for api marashalling and
+    documentation.
+    """
+
     api = Namespace('site-available',
                     description='sites available related operations')
 
