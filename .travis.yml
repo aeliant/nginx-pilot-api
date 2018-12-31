@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+install:
+  - pip install -r requirements-dev.txt -r requirements.txt
+  - pip install codecov
+scripts:
+  - nosetests --with-coverage --cover-package=nginx_pilot_api
+env:
+  - FLASK_SECRET_KEY=asecretkeyusedfortestingpurposeonly
