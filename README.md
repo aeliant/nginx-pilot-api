@@ -1,4 +1,8 @@
 # NGINX Pilot - API
+[![Build Status](https://travis-ci.org/aeliant/nginx-pilot-api.svg?branch=master)](https://travis-ci.org/aeliant/nginx-pilot-api)
+[![codecov](https://codecov.io/gh/Querdos/nginx-conf-parser/branch/master/graph/badge.svg)](https://codecov.io/gh/Querdos/nginx-conf-parser)
+[![PyPI version](https://badge.fury.io/py/nginx-conf-parser.svg)](https://badge.fury.io/py/nginx-conf-parser)
+
 A flask based API for serving and editing nginx configuration
 
 # Tasks to be done
