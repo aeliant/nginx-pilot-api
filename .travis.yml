@@ -6,10 +6,10 @@ python:
 before_install:
   - pip install codecov
 install:
-- pip install -r requirements-dev.txt -r requirements.txt
-scripts:
-- nosetests --with-coverage --cover-package=nginx_pilot_api
-- codecov
+  - pip install -r requirements-dev.txt -r requirements.txt
+script:
+  - nosetests --with-coverage --cover-package=nginx_pilot_api
+  - codecov
 env:
   global:
   - FLASK_SECRET_KEY=asecretkeyusedfortestingpurposeonly
