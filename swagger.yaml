@@ -1,0 +1,15 @@
+swagger: "2.0"
+info:
+  description: "API used for managing NGINX configurations."
+  version: "0.1.0"
+  title: "Nginx Pilot API"
+  contact:
+    email: "hamza.essayegh@protonmail.com"
+  license:
+    name: "MIT License"
+    url: "https://github.com/aeliant/nginx-conf-parser/blob/master/LICENSE"
+schemes:
+  - "http"
+  - "https"
+
+paths:
