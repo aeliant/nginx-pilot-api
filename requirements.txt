@@ -1,4 +1,4 @@
 flask==1.0.2
+flask-bcrypt==0.7.1
 flask-restplus==0.12.1
-flask-script==2.0.6
 nginx-conf-parser==0.1.1
