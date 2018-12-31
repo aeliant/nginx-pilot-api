@@ -16,10 +16,22 @@ with python3:
 $ virtualenv venv
 $ source venv/Script/activate # on windows
 $ source venv/bin/activate # on *nix
+
 $ make install-dev
 ```
 
 You're ready to work ! Don't hesitate to contact me if needed.
+
+# Useful commands
+Before trying to launch any command, set environment variables:
+```bash
+$ export FLASK_APP=manage.py
+$ export FLASK_SECRET
+```
+
+Launch tests:
+```bash
+$
 
 # Contributors
 *  Hamza ESSAYEGH (@querdos)
