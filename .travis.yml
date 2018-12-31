@@ -9,7 +9,8 @@ install:
   - pip install -r requirements-dev.txt -r requirements.txt
 script:
   - nosetests --with-coverage --cover-package=nginx_pilot_api
-  - codecov
+after_success:
+  - codecov --gcov-root nginx_pilot_api
 env:
   global:
   - FLASK_SECRET_KEY=asecretkeyusedfortestingpurposeonly
